@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/config.toml"
+export STARSHIP_CACHE="${XDG_CACHE_HOME}/starship/${STARSHIP_SESSION_KEY}.log"
