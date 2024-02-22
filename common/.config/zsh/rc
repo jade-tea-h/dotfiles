@@ -93,6 +93,7 @@ ZPLUGDIR=$XDG_DATA_HOME/zsh/plugins
 # for zoxide completions to work
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
+eval "$(starship init zsh)"
 
 typeset ignore_rc=( pnpm )
 # source other local stuff I might have
