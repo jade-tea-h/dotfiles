@@ -77,34 +77,7 @@ return {
   },
 
   {
-    "folke/neodev.nvim",
-    opts = {
-      override = function(root_dir, options)
-        if root_dir:find("/home/jade/.dotfiles", 1, true)
-            or root_dir:find("/home/jade/projects/nvim-dev", 1, true) then
-          options.library.enabled = true
-          options.library.plugins = true
-        end
-      end
-    },
-    config = function(_, opts)
-      require("neodev").setup(opts)
-      require("lspconfig").lua_ls.setup(
-        {
-          single_file_support = true,
-          settings = {
-            Lua = {
-              runtime = {
-                version = 'LuaJIT',
-              },
-              workspace = {
-                checkThirdParty = false,
-              },
-            },
-          },
-        }
-      )
-    end,
+    "folke/lazydev.nvim",
     ft = "lua",
   },
 }

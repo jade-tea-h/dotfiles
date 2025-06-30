@@ -118,6 +118,7 @@ local source_data = {
       sources = {
         {
           { entry = "hrsh7th/cmp-nvim-lua", source = { name = "nvim_lua" }, display = "Lua" },
+          { entry = "folke/lazydev.nvim", source = { name = "lazydev" }, display = "LazyDev" },
           {
             entry = { "KadoBOT/cmp-plugins",
               opts = {
