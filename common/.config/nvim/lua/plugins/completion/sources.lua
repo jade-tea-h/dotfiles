@@ -37,7 +37,7 @@ local fuzzy_path = {
         '--type', 'd', '--type', 'f', -- suggest directories
         '--follow', -- follow symbolic links for suggestions
         -- '--no-ignore-vcs', -- suggest files in .gitignore
-        -- '--hidden',
+        '--hidden',
         -- '--glob',
         '--exclude', "'*.pyc'",
         '--exclude', "'__*__'",
