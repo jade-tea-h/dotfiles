@@ -7,6 +7,7 @@ return {
     },
     config = true,
     event = { "BufWritePre" },
+    version = "9306352",
   },
 
   {
