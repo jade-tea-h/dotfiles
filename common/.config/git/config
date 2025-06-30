@@ -22,6 +22,7 @@
   logdiffshort = logdiff --oneline
   ls = ls-files
   m = merge
+  pas = pull --autostash
   rb = rebase
   s = status
   ss = status --short
