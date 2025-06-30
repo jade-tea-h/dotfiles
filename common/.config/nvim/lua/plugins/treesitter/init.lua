@@ -31,28 +31,6 @@ return {
   },
 
   {
-    "luckasRanarison/tree-sitter-hyprlang",
-    build = ":TSInstall hyprlang",
-    init = function()
-      vim.filetype.add(
-        {
-          pattern = {
-            [".*/hypr/.*%.conf"] = "hyprlang",
-          },
-        }
-      )
-    end,
-    ft = "hyprlang",
-  },
-
-  {
-    "Fymyte/rasi.vim",
-    build = ":TSInstall rasi",
-    dependencies = { "treesitter" },
-    ft = "rasi",
-  },
-
-  {
     "JoosepAlviste/nvim-ts-context-commentstring",
     opts = {
       enable_autocmd = false,
