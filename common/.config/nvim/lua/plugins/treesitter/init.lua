@@ -20,6 +20,17 @@ return {
   },
 
   {
+    "RRethy/nvim-treesitter-endwise",
+    enabled = false,  -- doesn't support nvim-treesitter main branch yet
+    ft = { "ruby", "lua", "vim", "bash", "elixir", "fish", "julia", "markdown" },
+  },
+
+  {
+    "brianhuster/treesitter-endwise.nvim",  -- temporary replacement for above plugin
+    lazy = false,
+  },
+
+  {
     "luckasRanarison/tree-sitter-hyprlang",
     build = ":TSInstall hyprlang",
     init = function()
