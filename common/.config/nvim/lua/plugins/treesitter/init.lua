@@ -6,26 +6,16 @@ return {
     name = "treesitter",
     build = ":TSUpdate",
     main = "nvim-treesitter.configs",
-    opts = utils.get_options(),
-    init = function(plugin)
-      require("lazy.core.loader").add_to_rtp(plugin)
-      require("nvim-treesitter.query_predicates")
-
-      vim.opt.foldmethod = "expr"
-      vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-      vim.opt.foldenable = false
+    config = function(_, opts)
+      require("nvim-treesitter").setup(opts)
+      require("nvim-treesitter").install(utils.languages)
     end,
+    branch = "main",
+    lazy = false,
     cmd = {
       "TSInstall",
       "TSUpdate",
       "TSUpdateSync",
-    },
-    event = "VeryLazy",
-    dependencies = {
-      {
-        "metiulekm/nvim-treesitter-endwise",
-        init = function() utils.options.endwise = { enable = true } end,
-      },
     },
   },
 
