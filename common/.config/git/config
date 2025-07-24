@@ -15,6 +15,7 @@
   ca = commit --all
   cm = commit --message
   cam = commit --all --message
+  amend = commit --amend
   d = diff
   dt = difftool
   l = log -n 5
